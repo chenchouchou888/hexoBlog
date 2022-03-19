@@ -1,10 +1,16 @@
 ---
-title: Hello World
+title: Hello CC
 ---
 
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+####在vercel新建hexo博客项目并用git将其clone到本地后，我想要自定义博文内容并更新，
+###在此过程中遇到了如下问题：
 
-## Quick Start
+#####无法用hexo命令进行博文的快速创建/本地运行
+#####例如:
+```bash 
+
+hexo server
+```
 
 ### Create a new post
 
