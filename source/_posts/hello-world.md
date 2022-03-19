@@ -2,44 +2,29 @@
 title: Hello CC
 ---
 
-####在vercel新建hexo博客项目并用git将其clone到本地后，我想要自定义博文内容并更新，
-###在此过程中遇到了如下问题：
+###在vercel新建hexo博客项目并用git将其clone到本地后，我想要自定义博文内容并更新
+###
+在此过程中遇到了如下问题：
+###
 
-#####无法用hexo命令进行博文的快速创建/本地运行
+#####无法用hexo命令进行博文的快速创建/初始化
 #####例如:
 ```bash 
-
-hexo server
+$ hexo init
 ```
 
-### Create a new post
+### 报错
 
 ```bash
-$ hexo new "My New Post"
+无法加载文件xxx
+因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170  所在位置
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+### 解决方案
 
 ```bash
-$ hexo server
+$ set-ExecutionPolicy RemoteSigned
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
-
-```bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-```bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
