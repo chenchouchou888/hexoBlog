@@ -91,7 +91,7 @@ vue和react都是采用diff算法来对比新旧虚拟节点，从而更新节�
 
 #### vue组件的通信方式
 
-+ Vuex
++ Vuex(一个专为 Vue 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）)
 + props
 + $emit
 + bus全局事件总线
