@@ -63,3 +63,19 @@ overflow的值不为visible
 清除浮动（让父元素的高度包含子浮动元素）
 避免某元素被浮动元素覆盖
 避免多列布局由于宽度计算四舍五入而自动换行
+
+####圣杯/双飞翼
+
+布局特点：左右固定，中间自适应，main写在left,right之上，实现中间优先加载
+
+float实现：
+
+main left right : float
+main width 100% 
+left margin-left 100%
+right marin-left 宽度
+
+
+圣杯和双飞翼为了中间元素不被覆盖，作出调整的区分点:
+圣杯:设置main paddingL/R = 左右宽
+双飞翼:内嵌inner 设置margin
